@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, <Link:import></Link:import> } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, 
