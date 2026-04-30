@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, <Link:import></Link:import> } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, 
@@ -24,7 +24,7 @@ const ProductView = () => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [toast, setToast] = useState({ isVisible: false, message: '', type: 'success' });
 
-  const { addToCart, isInCart, getCartItem } = useCart();
+  const { addToCart, isInCart } = useCart();
 
   const showToast = (message, type = 'success') => {
     setToast({ isVisible: true, message, type });
