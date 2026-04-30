@@ -8,9 +8,6 @@ import {
   Heart, 
   ArrowRight, 
   CheckCircle, 
-  Truck, 
-  RotateCcw,
-  Award,
   Recycle
 } from 'lucide-react';
 import { useCart } from '../contexts/CartContext';
@@ -22,7 +19,7 @@ const Home = () => {
   const [subscribed, setSubscribed] = useState(false);
   const [toast, setToast] = useState({ isVisible: false, message: '', type: 'success' });
 
-  const { addToCart, isInCart, getCartItem } = useCart();
+  const { addToCart, isInCart } = useCart();
 
   const showToast = (message, type = 'success') => {
     setToast({ isVisible: true, message, type });

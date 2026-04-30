@@ -9,7 +9,7 @@ const Products = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [toast, setToast] = useState({ isVisible: false, message: '', type: 'success' });
   
-  const { addToCart, isInCart, getCartItem } = useCart();
+  const { addToCart, isInCart } = useCart();
 
   const showToast = (message, type = 'success') => {
     setToast({ isVisible: true, message, type });
